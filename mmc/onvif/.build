@@ -1,0 +1,7 @@
+{
+  "source": "github-release-asset",
+  "owner": "dark1alex",
+  "repository": "LSC-ACTION-ONVIF",
+  "assetName": "onvif_srvd",
+  "type": "dev"
+}

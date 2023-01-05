@@ -1,4 +1,11 @@
-## Root and customization for LSC Outdoor 1080P and LSC Rotating 1080P cameras
+## Root and customization for LSC Outdoor 1080P and LSC Rotating 1080P cameras with ONVIF
+
+### New features
+ - Onvif with PTZ control (ONVIF server on port 5000)
+ 
+ Put contents of sdcard.zip from releases on sdcard and procede with [option 1](#option-1) or [option 2](#option-2) or [option 3](#option-3)
+
+
 
 ### TL;DR
 
@@ -65,7 +72,8 @@ This is a quick review of pros and cons of these devices:
 
 If you want any of the features listed in the 'Customization' (RTSP, Motion notfication, download/upload, cleanup) that can be done in one of 2 ways:
 
-##### Option 1 -- This option **REQUIRES** your device to be on version 2.10.36
+#### Option 1
+#### This option **REQUIRES** your device to be on version 2.10.36
 
 This option is simple:
 1. Download the repository files (from the Code->Download ZIP button above) or clone it with git.
@@ -85,13 +93,15 @@ This option is simple:
 15. Insert SD card to device and power it on
 16. Wait for it to boot - it may take a little longer than usual due to the wifi setup stuff. Wait for it to show online in the phone app (which should work normally) then you should be able to view the RTSP feed on `rtsp://ip/main_ch`.
 
-##### Option 2 -- If you're not on 2.10.36 and are willing/able to update
+#### Option 2 
+#### If you're not on 2.10.36 and are willing/able to update
 
 If you're on an older version and can update to 2.10.36, that would be the quickest way to get everything working.
 
 **OPTION FOR OUTDOOR CAMERA ONLY** -- If you WANT to update to 2.10.36 but the update isn't being offered to you, you have the option to download the 2.10.36 update file from tuya servers on this [link](https://fireware.tuyaeu.com:1443/smart/firmware/upgrade/ay1541668973821t35pE/165966791961ed11009a7.bin) then, simply copy the .bin file to the root of the SD card and boot the device -- the light will blink 2 seconds on and 2 seconds off while updating the device and it will reboot when done (BEWARE not to power it off while updating which will take a few minutes). This is **NOT** recommended for the rotating camera since they haven're released 2.10.36 for it and it works just fine on 2.10.28 (default firmware) using option 3 below.
 
-##### Option 3 -- If you're not on 2.10.36
+#### Option 3 
+#### If you're not on 2.10.36
 
 If for some reason you can't or don't want to update to 2.10.36 (i.e. ROTATING CAMERA) you can follow the steps below to extract the required files.
 **KNOWN LIMITATION**: the oudoor camera with firmware 2.10.22 running 2.10.36 application fails to display the HD stream in the mobile app, but SD works along with RTSP in HD.
